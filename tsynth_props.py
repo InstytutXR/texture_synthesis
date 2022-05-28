@@ -164,15 +164,19 @@ class TextSynth_Settings(bpy.types.PropertyGroup):
                                                     ('128', '128', ''),
                                                     ('256', '256', ''),
                                                     ('512', '512', ''),
-                                                    ('1024', '1024', '')
-                                                    ], default='512')
+                                                    ('1024', '1024', ''),
+                                                    ('2048', '2048', ''),
+                                                    ('4096', '4096', '')
+                                                    ], default='1024')
     in_size_preset_y: bpy.props.EnumProperty(name='Input', description='Input size from preset',  # can be  x * x , or x * y
                                              items=[('64',   '64', ''),
                                                     ('128', '128', ''),
                                                     ('256', '256', ''),
                                                     ('512', '512', ''),
-                                                    ('1024', '1024', '')
-                                                    ], default='512')
+                                                    ('1024', '1024', ''),
+                                                    ('2048', '2048', ''),
+                                                    ('4096', '4096', '')
+                                                    ], default='1024')
 
     out_size_from_preset: bpy.props.BoolProperty(name='Output', description='Output size from preset', default=False)
     out_size_percent: bpy.props.IntProperty(name='%', description='Output size multiplier', default=100, min=0, soft_max=100, subtype='PERCENTAGE')
@@ -183,15 +187,19 @@ class TextSynth_Settings(bpy.types.PropertyGroup):
                                                      ('128', '128', ''),
                                                      ('256', '256', ''),
                                                      ('512', '512', ''),
-                                                     ('1024', '1024', '')
-                                                     ], default='512')
+                                                     ('1024', '1024', ''),
+                                                    ('2048', '2048', ''),
+                                                    ('4096', '4096', '')
+                                                     ], default='1024')
     out_size_preset_y: bpy.props.EnumProperty(name='Output Size', description='From Preset',  # can be  x * x , or x * y
                                               items=[('64',   '64', ''),
                                                      ('128', '128', ''),
                                                      ('256', '256', ''),
                                                      ('512', '512', ''),
-                                                     ('1024', '1024', '')
-                                                     ], default='512')
+                                                     ('1024', '1024', ''),
+                                                    ('2048', '2048', ''),
+                                                    ('4096', '4096', '')                                                  
+                                                     ], default='1024')
 
     out_method: bpy.props.EnumProperty(name='Method', description='How / where to save generated image',
                                        items=[('TARGET_DIR', 'To Directory', 'Write to target dir'),
